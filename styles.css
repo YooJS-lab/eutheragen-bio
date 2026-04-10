@@ -98,12 +98,9 @@ button { font: inherit; }
   align-items: center;
   gap: 14px;
 }
-.brand-logo {
-  width: 176px;
-  max-width: 38vw;
-  height: auto;
-  flex-shrink: 0;
-  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.22));
+.brand-mark {
+  width: 52px; height: 52px; flex-shrink: 0;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.25));
 }
 .brand strong {
   display: block;
@@ -504,103 +501,5 @@ button { font: inherit; }
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
-  }
-}
-
-
-.hero-logo-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 22px 24px;
-  margin-bottom: 18px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(243,247,255,0.90));
-  box-shadow: var(--shadow);
-}
-.hero-logo {
-  width: min(100%, 460px);
-  height: auto;
-}
-.panel-header {
-  margin-bottom: 8px;
-}
-
-@media (max-width: 900px) {
-  .brand-logo {
-    width: 148px;
-  }
-  .hero-logo-card {
-    padding: 18px;
-  }
-}
-
-@media (max-width: 640px) {
-  .brand-logo {
-    width: 128px;
-    max-width: 44vw;
-  }
-}
-
-
-.publication-shell {
-  background: linear-gradient(180deg, rgba(10, 24, 46, 0.92) 0%, rgba(8, 19, 37, 0.98) 100%);
-  border: 1px solid var(--line);
-  border-radius: calc(var(--radius) + 4px);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.publication-topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 24px 28px;
-  border-bottom: 1px solid var(--line);
-  background: rgba(255,255,255,0.02);
-}
-
-.publication-label {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--brand-strong);
-  margin-bottom: 6px;
-}
-
-.publication-source {
-  color: var(--muted);
-  word-break: break-all;
-}
-
-.publication-frame-wrap {
-  padding: 0;
-  background: #091425;
-}
-
-.publication-frame {
-  width: 100%;
-  min-height: 980px;
-  border: 0;
-  display: block;
-  background: #ffffff;
-}
-
-.pub-link { white-space: nowrap; }
-
-@media (max-width: 860px) {
-  .publication-topbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .pub-link {
-    width: 100%;
-    text-align: center;
-  }
-  .publication-frame {
-    min-height: 820px;
   }
 }

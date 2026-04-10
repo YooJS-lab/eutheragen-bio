@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eutheragen Bio | Precision immunobiology for inflammatory disease</title>
+  <title>Eutheragen Bio | Targeting immune amplification at its source</title>
   <meta name="description" content="Eutheragen Bio is building a first-in-class therapeutic platform based on MCEMP1 biology for severe inflammatory disease." />
   <meta name="theme-color" content="#0b1d36" />
   <meta property="og:title" content="Eutheragen Bio" />
-  <meta property="og:description" content="Precision immunobiology for inflammatory disease." />
+  <meta property="og:description" content="Targeting immune amplification at its source." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071c17'/%3E%3Cpath d='M18 46V18h8.5c9.3 0 15.5 5.3 15.5 13.8C42 40.4 35.8 46 26.5 46H18Zm7-6h1.3c5.8 0 8.7-2.7 8.7-8.2 0-5.4-2.9-8-8.7-8H25v16Z' fill='%23c8f7d4'/%3E%3Cpath d='M46 18h-7v28h7V18Z' fill='%232a7f62'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -25,7 +25,11 @@
   <header class="topbar">
     <div class="container nav-shell">
       <a href="#home" class="brand" aria-label="Eutheragen Bio home">
-        <img class="brand-logo" src="logo.png" alt="Eutheragen Bio logo" />
+        <svg class="brand-mark" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="3" y="3" width="74" height="74" rx="22" fill="#102340" stroke="rgba(176,205,255,0.20)"/>
+          <path d="M24 56V24h11.5c12.4 0 20.5 6.2 20.5 16.1S47.9 56 35.5 56H24Zm8-7h3.1c7.8 0 12-3 12-8.9 0-6-4.2-9.1-12-9.1H32v18Z" fill="#D8E6FF"/>
+          <path d="M61 24h-8v32h8V24Z" fill="#3B69B1"/>
+        </svg>
         <span>
           <strong>Eutheragen Bio</strong>
           <small data-i18n="brandTag">First-in-class inflammation therapeutics</small>
@@ -37,7 +41,6 @@
         <a href="#science" data-i18n="navScience">Science</a>
         <a href="#platform" data-i18n="navPlatform">Platform</a>
         <a href="#pipeline" data-i18n="navPipeline">Pipeline</a>
-        <a href="#publications" data-i18n="navPublications">Publications</a>
         <a href="#leadership" data-i18n="navLeadership">Leadership</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
@@ -59,7 +62,6 @@
         <a href="#science" data-i18n="navScience">Science</a>
         <a href="#platform" data-i18n="navPlatform">Platform</a>
         <a href="#pipeline" data-i18n="navPipeline">Pipeline</a>
-        <a href="#publications" data-i18n="navPublications">Publications</a>
         <a href="#leadership" data-i18n="navLeadership">Leadership</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </div>
@@ -71,7 +73,7 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <div class="eyebrow" data-i18n="heroEyebrow">MCEMP1-driven therapeutic platform</div>
-          <h1 data-i18n="heroTitle">Precision immunobiology for inflammatory disease.</h1>
+          <h1 data-i18n="heroTitle">Targeting immune amplification at its source.</h1>
           <p class="hero-subtitle" data-i18n="heroSubtitle">
             Eutheragen Bio is building a first-in-class therapeutic platform based on MCEMP1 biology for severe inflammatory disease, infection-associated hyperinflammation, and lung-centered immune pathology.
           </p>
@@ -96,9 +98,6 @@
         </div>
 
         <div class="hero-panel reveal delay-1">
-          <div class="hero-logo-card">
-            <img src="logo.png" alt="Eutheragen Bio logo" class="hero-logo" />
-          </div>
           <div class="panel-card panel-glow">
             <div class="panel-header">
               <span class="status-dot"></span>
@@ -266,37 +265,6 @@
         </div>
       </div>
     </section>
-
-    
-    <section id="publications" class="section">
-      <div class="container">
-        <div class="section-head reveal centered">
-          <div class="eyebrow" data-i18n="pubEyebrow">Publications</div>
-          <h2 data-i18n="pubTitle">Research publications</h2>
-          <p data-i18n="pubSubtitle">This section is linked directly to Prof. Yoo’s laboratory publication page so the publication list stays aligned with the existing lab site.</p>
-        </div>
-
-        <div class="publication-shell reveal delay-1">
-          <div class="publication-topbar">
-            <div>
-              <div class="publication-label" data-i18n="pubLiveLabel">Live publication page</div>
-              <div class="publication-source">yoojs-lab.github.io/website_YooJS/publication.html</div>
-            </div>
-            <a class="btn btn-secondary pub-link" href="publication.html" data-i18n="pubButton">Open full publication list</a>
-          </div>
-          <div class="publication-frame-wrap">
-            <iframe
-              class="publication-frame"
-              src="https://yoojs-lab.github.io/website_YooJS/publication.html"
-              title="Ji-Seung Yoo laboratory publications"
-              loading="lazy"
-              referrerpolicy="no-referrer"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
 
     <section id="leadership" class="section section-alt">
       <div class="container">
