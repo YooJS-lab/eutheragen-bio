@@ -6,7 +6,6 @@ function applyLanguage(lang){
     const nextText = el.getAttribute(`data-${lang}`);
     if (nextText) el.textContent = nextText;
   });
-
   buttons.forEach((btn) => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
