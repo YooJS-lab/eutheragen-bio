@@ -1,2 +1,2 @@
 # Eutheragen Bio Website
-Header updated with larger logo and branded wordmark.
+Dynamic dual-track corporate landing page for GitHub Pages.

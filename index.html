@@ -4,246 +4,316 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eutheragen Bio</title>
-  <meta name="description" content="Eutheragen Bio is building a next-generation immunotherapy platform around a newly discovered immunoreceptor for severe inflammatory disease." />
-  <meta name="theme-color" content="#08162b" />
+  <meta name="description" content="Eutheragen Bio develops immunoreceptor-targeted therapeutics and advances host-virus interaction research for inflammatory and infectious disease." />
+  <meta name="theme-color" content="#08172d" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=1" />
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-header">
-      <div class="container nav">
-        <a href="#top" class="brand" aria-label="Eutheragen Bio home">
-          <img src="logo.png" alt="Eutheragen Bio logo" class="brand-logo" />
-          <span class="brand-wordmark">
-            <span class="brand-eu">Eutheragen</span>
-            <span class="brand-bio">Bio</span>
-          </span>
-        </a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-        <nav class="nav-links" aria-label="Primary">
-          <a href="#about" data-en="About" data-ko="회사 소개">About</a>
-          <a href="#science" data-en="Science" data-ko="핵심 과학">Science</a>
-          <a href="#platform" data-en="Platform" data-ko="플랫폼">Platform</a>
-          <a href="#contact" data-en="Contact" data-ko="문의">Contact</a>
-        </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Eutheragen Bio home">
+        <img src="logo.png" alt="Eutheragen Bio logo" class="brand-logo" />
+      </a>
 
-        <div class="lang-switch" aria-label="Language switch">
-          <button class="lang-btn active" data-lang="en" type="button">EN</button>
-          <button class="lang-btn" data-lang="ko" type="button">KO</button>
-        </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about" data-en="About" data-ko="회사 소개">About</a>
+        <a href="#science" data-en="Science" data-ko="핵심 과학">Science</a>
+        <a href="#publications" data-en="Publications" data-ko="논문">Publications</a>
+        <a href="#contact" data-en="Contact" data-ko="문의">Contact</a>
+      </nav>
+
+      <div class="lang-switch" aria-label="Language switch">
+        <button class="lang-btn active" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="ko" type="button">KO</button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow" data-en="NEXT-GENERATION IMMUNORECEPTOR PLATFORM" data-ko="차세대 면역수용체 기반 플랫폼">
-              NEXT-GENERATION IMMUNORECEPTOR PLATFORM
-            </p>
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-en="IMMUNORECEPTOR THERAPEUTICS · HOST–VIRUS IMMUNODYNAMICS" data-ko="면역수용체 치료제 · 숙주–바이러스 면역동역학">
+            IMMUNORECEPTOR THERAPEUTICS · HOST–VIRUS IMMUNODYNAMICS
+          </p>
 
-            <h1
-              data-en="A new immunoreceptor-centered strategy for severe inflammatory disease."
-              data-ko="새로운 면역수용체 기반 전략으로 중증 염증성 질환의 치료 가능성을 넓혀갑니다.">
-              A new immunoreceptor-centered strategy for severe inflammatory disease.
-            </h1>
+          <h1
+            data-en="A scientific company built at the intersection of immunoreceptor discovery and host–virus interaction biology."
+            data-ko="면역수용체 발굴과 숙주–바이러스 상호작용 생물학의 교차점에서 출발한 과학 중심 기업입니다.">
+            A scientific company built at the intersection of immunoreceptor discovery and host–virus interaction biology.
+          </h1>
 
-            <p class="lead"
-              data-en="Eutheragen Bio is building a precision immunotherapy platform around a newly discovered immunoreceptor with the potential to reshape how inflammatory amplification is understood and controlled."
-              data-ko="유테라젠 바이오는 새롭게 발견한 면역수용체를 바탕으로, 염증 반응의 증폭 기전을 새롭게 이해하고 정밀하게 제어할 수 있는 면역치료 플랫폼을 구축하고 있습니다.">
-              Eutheragen Bio is building a precision immunotherapy platform around a newly discovered immunoreceptor with the potential to reshape how inflammatory amplification is understood and controlled.
-            </p>
+          <p class="lead"
+            data-en="Eutheragen Bio advances two tightly connected research directions: a next-generation therapeutic platform based on a newly discovered immunoreceptor, and a deep mechanistic program in host–virus interaction biology that reveals how immunity is activated, amplified, and subverted."
+            data-ko="유테라젠 바이오는 서로 긴밀히 연결된 두 축을 발전시키고 있습니다. 하나는 새롭게 발견한 면역수용체를 기반으로 한 차세대 치료 플랫폼이며, 다른 하나는 면역 반응이 어떻게 시작되고 증폭되며 교란되는지를 밝히는 숙주–바이러스 상호작용 연구입니다.">
+            Eutheragen Bio advances two tightly connected research directions: a next-generation therapeutic platform based on a newly discovered immunoreceptor, and a deep mechanistic program in host–virus interaction biology that reveals how immunity is activated, amplified, and subverted.
+          </p>
 
-            <div class="hero-actions">
-              <a href="#contact" class="button primary" data-en="Contact Us" data-ko="문의하기">Contact Us</a>
-              <a href="#platform" class="button secondary" data-en="Explore Platform" data-ko="플랫폼 보기">Explore Platform</a>
-            </div>
-
-            <div class="hero-tags">
-              <span data-en="Differentiated thesis" data-ko="차별화된 핵심 가설">Differentiated thesis</span>
-              <span data-en="Precision immunotherapy" data-ko="정밀 면역치료">Precision immunotherapy</span>
-              <span data-en="Platform scalability" data-ko="플랫폼 확장성">Platform scalability</span>
-            </div>
+          <div class="hero-actions">
+            <a href="#science" class="button primary" data-en="Explore Science" data-ko="핵심 과학 보기">Explore Science</a>
+            <a href="#contact" class="button secondary" data-en="Contact Us" data-ko="문의하기">Contact Us</a>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
-            <div class="glow glow-1"></div>
-            <div class="glow glow-2"></div>
-            <div class="glow glow-3"></div>
+          <div class="hero-tags">
+            <span data-en="Immunoreceptor-targeted therapeutics" data-ko="면역수용체 표적 치료 전략">Immunoreceptor-targeted therapeutics</span>
+            <span data-en="Innate immunity and viral immune evasion" data-ko="선천면역과 바이러스 면역회피">Innate immunity and viral immune evasion</span>
+            <span data-en="Translational immunobiology" data-ko="전환 가능성이 높은 면역생물학">Translational immunobiology</span>
+          </div>
+        </div>
 
-            <div class="glass-card card-top">
-              <p class="glass-label" data-en="INVESTMENT THESIS" data-ko="투자 포인트">INVESTMENT THESIS</p>
-              <h3
-                data-en="A first-in-class opportunity built on differentiated immunobiology"
-                data-ko="차별화된 면역생물학에 기반한 first-in-class 기회">
-                A first-in-class opportunity built on differentiated immunobiology
+        <div class="hero-stage" aria-hidden="true">
+          <div class="stage-panel receptor-panel">
+            <div class="panel-glow glow-a"></div>
+            <div class="panel-glow glow-b"></div>
+            <div class="panel-grid"></div>
+            <div class="panel-copy">
+              <p class="panel-label" data-en="THERAPEUTIC AXIS" data-ko="치료 축">THERAPEUTIC AXIS</p>
+              <h3 data-en="A newly discovered immunoreceptor as a differentiated entry point into inflammatory disease"
+                  data-ko="중증 염증성 질환에 대한 차별화된 진입점으로서의 새로운 면역수용체">
+                A newly discovered immunoreceptor as a differentiated entry point into inflammatory disease
               </h3>
             </div>
+          </div>
 
-            <div class="glass-card card-bottom">
-              <p class="glass-label" data-en="WHY IT MATTERS" data-ko="왜 중요한가">WHY IT MATTERS</p>
-              <ul>
-                <li data-en="Mechanistically differentiated" data-ko="기전적으로 차별화된 접근">Mechanistically differentiated</li>
-                <li data-en="Strategically relevant in inflammatory disease" data-ko="염증성 질환에서의 높은 전략적 가치">Strategically relevant in inflammatory disease</li>
-                <li data-en="Expandable across multiple therapeutic paths" data-ko="다양한 치료 경로로 확장 가능한 구조">Expandable across multiple therapeutic paths</li>
-              </ul>
+          <div class="stage-panel virus-panel">
+            <svg viewBox="0 0 420 220" class="science-svg">
+              <defs>
+                <linearGradient id="lineGlow" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#80b8ff" stop-opacity="0.2" />
+                  <stop offset="50%" stop-color="#a9d3ff" stop-opacity="0.85" />
+                  <stop offset="100%" stop-color="#80b8ff" stop-opacity="0.2" />
+                </linearGradient>
+              </defs>
+              <g class="network">
+                <circle cx="60" cy="58" r="10" class="node"/>
+                <circle cx="150" cy="40" r="8" class="node"/>
+                <circle cx="230" cy="78" r="9" class="node"/>
+                <circle cx="320" cy="42" r="8" class="node"/>
+                <circle cx="110" cy="140" r="10" class="node"/>
+                <circle cx="210" cy="154" r="11" class="node"/>
+                <circle cx="332" cy="138" r="10" class="node"/>
+
+                <line x1="60" y1="58" x2="150" y2="40" class="edge"/>
+                <line x1="150" y1="40" x2="230" y2="78" class="edge"/>
+                <line x1="230" y1="78" x2="320" y2="42" class="edge"/>
+                <line x1="60" y1="58" x2="110" y2="140" class="edge"/>
+                <line x1="110" y1="140" x2="210" y2="154" class="edge"/>
+                <line x1="210" y1="154" x2="332" y2="138" class="edge"/>
+                <line x1="150" y1="40" x2="110" y2="140" class="edge"/>
+                <line x1="230" y1="78" x2="210" y2="154" class="edge"/>
+                <line x1="320" y1="42" x2="332" y2="138" class="edge"/>
+              </g>
+            </svg>
+            <div class="panel-copy panel-copy-bottom">
+              <p class="panel-label" data-en="HOST–VIRUS INTERACTION" data-ko="숙주–바이러스 상호작용">HOST–VIRUS INTERACTION</p>
+              <h3 data-en="Mechanistic research in innate immunity, inflammatory escalation, and viral immune evasion"
+                  data-ko="선천면역, 염증 증폭, 바이러스 면역회피를 다루는 기전 중심 연구">
+                Mechanistic research in innate immunity, inflammatory escalation, and viral immune evasion
+              </h3>
             </div>
           </div>
         </div>
-      </section>
-
-      <section id="about" class="section">
-        <div class="container">
-          <div class="section-head">
-            <p class="section-tag" data-en="ABOUT" data-ko="회사 소개">ABOUT</p>
-            <h2
-              data-en="We are building a company around a biological insight that can create both scientific distinction and therapeutic value."
-              data-ko="과학적 차별성과 치료적 가치를 동시에 만들어낼 수 있는 생물학적 통찰을 중심으로 회사를 구축하고 있습니다.">
-              We are building a company around a biological insight that can create both scientific distinction and therapeutic value.
-            </h2>
-          </div>
-
-          <div class="cards three">
-            <article class="card">
-              <h3 data-en="Clear strategic positioning" data-ko="명확한 전략적 포지셔닝">Clear strategic positioning</h3>
-              <p
-                data-en="We are not entering a crowded space with another broad anti-inflammatory concept. We are advancing a more selective and mechanistically grounded approach."
-                data-ko="혼잡한 영역에서 또 하나의 광범위 항염증 개념을 제시하는 것이 아니라, 선택성과 기전적 타당성을 갖춘 새로운 접근을 제시합니다.">
-                We are not entering a crowded space with another broad anti-inflammatory concept. We are advancing a more selective and mechanistically grounded approach.
-              </p>
-            </article>
-
-            <article class="card">
-              <h3 data-en="Foundational scientific depth" data-ko="탄탄한 과학적 기반">Foundational scientific depth</h3>
-              <p
-                data-en="Our platform is rooted in deep expertise in immunology, virology, and host-response biology, enabling a stronger bridge from mechanism to therapy."
-                data-ko="면역학, 바이러스학, 숙주 반응 생물학에 대한 깊은 전문성을 바탕으로, 기전 이해를 치료 전략으로 자연스럽게 연결합니다.">
-                Our platform is rooted in deep expertise in immunology, virology, and host-response biology, enabling a stronger bridge from mechanism to therapy.
-              </p>
-            </article>
-
-            <article class="card">
-              <h3 data-en="Expandable company architecture" data-ko="확장 가능한 회사 구조">Expandable company architecture</h3>
-              <p
-                data-en="We are creating a platform capable of generating multiple assets, indication paths, and partnering options from a single differentiated discovery engine."
-                data-ko="하나의 차별화된 discovery engine을 바탕으로, 다수의 자산과 적응증, 파트너링 기회를 만들어낼 수 있는 구조를 설계하고 있습니다.">
-                We are creating a platform capable of generating multiple assets, indication paths, and partnering options from a single differentiated discovery engine.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="science" class="section section-alt">
-        <div class="container">
-          <div class="section-head">
-            <p class="section-tag" data-en="SCIENCE" data-ko="핵심 과학">SCIENCE</p>
-            <h2
-              data-en="Our core scientific thesis is that a newly discovered immunoreceptor can open a more precise path to modulating inflammatory escalation."
-              data-ko="핵심 과학 가설은 새롭게 발견한 면역수용체가 염증 반응의 증폭을 보다 정밀하게 조절하는 새로운 길을 열 수 있다는 점입니다.">
-              Our core scientific thesis is that a newly discovered immunoreceptor can open a more precise path to modulating inflammatory escalation.
-            </h2>
-          </div>
-
-          <div class="cards two">
-            <article class="card">
-              <h3 data-en="Biology first" data-ko="생물학 중심 접근">Biology first</h3>
-              <p
-                data-en="We begin with disease-relevant biology: how inflammatory responses are initiated, amplified, and sustained in clinically meaningful contexts."
-                data-ko="질환과 직접 맞닿아 있는 생물학에서 출발합니다. 염증 반응이 실제 질환 맥락에서 어떻게 시작되고, 증폭되며, 유지되는지를 살펴봅니다.">
-                We begin with disease-relevant biology: how inflammatory responses are initiated, amplified, and sustained in clinically meaningful contexts.
-              </p>
-            </article>
-
-            <article class="card">
-              <h3 data-en="Therapeutic tractability" data-ko="치료 가능성 평가">Therapeutic tractability</h3>
-              <p
-                data-en="We assess not only whether the biology is compelling, but whether it can support durable therapeutic design and meaningful translational progress."
-                data-ko="생물학적 의미가 분명한지에 그치지 않고, 실제 치료 설계와 임상적 확장으로 이어질 수 있는지까지 함께 평가합니다.">
-                We assess not only whether the biology is compelling, but whether it can support durable therapeutic design and meaningful translational progress.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="platform" class="section">
-        <div class="container">
-          <div class="section-head">
-            <p class="section-tag" data-en="PLATFORM" data-ko="플랫폼">PLATFORM</p>
-            <h2
-              data-en="We are building an integrated path from target insight to therapeutic design."
-              data-ko="타깃에 대한 통찰에서 치료 설계까지 이어지는 통합형 개발 흐름을 구축하고 있습니다.">
-              We are building an integrated path from target insight to therapeutic design.
-            </h2>
-          </div>
-
-          <div class="timeline">
-            <div class="step">
-              <span>01</span>
-              <h3 data-en="Target definition" data-ko="타깃 정의">Target definition</h3>
-              <p
-                data-en="Identify receptor biology most relevant to inflammatory progression and therapeutic leverage."
-                data-ko="염증성 질환의 진행과 치료적 개입 가능성에 가장 중요한 수용체 생물학을 정의합니다.">
-                Identify receptor biology most relevant to inflammatory progression and therapeutic leverage.
-              </p>
-            </div>
-
-            <div class="step">
-              <span>02</span>
-              <h3 data-en="Validation engine" data-ko="검증 엔진">Validation engine</h3>
-              <p
-                data-en="Build functional systems that transform mechanistic insight into a rigorous discovery framework."
-                data-ko="기전적 통찰을 견고한 발굴 체계로 전환할 수 있는 기능성 분석 시스템을 구축합니다.">
-                Build functional systems that transform mechanistic insight into a rigorous discovery framework.
-              </p>
-            </div>
-
-            <div class="step">
-              <span>03</span>
-              <h3 data-en="Therapeutic expansion" data-ko="치료 전략 확장">Therapeutic expansion</h3>
-              <p
-                data-en="Create multiple development paths across indications, modalities, and strategic partnering opportunities."
-                data-ko="적응증, 모달리티, 전략적 파트너링 기회로 이어질 수 있는 다중 개발 경로를 설계합니다.">
-                Create multiple development paths across indications, modalities, and strategic partnering opportunities.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <div class="container">
-          <div class="section-head">
-            <p class="section-tag" data-en="CONTACT" data-ko="문의">CONTACT</p>
-            <h2
-              data-en="We welcome scientific, strategic, and partnership conversations."
-              data-ko="과학적 협력, 전략적 논의, 파트너십 문의를 환영합니다.">
-              We welcome scientific, strategic, and partnership conversations.
-            </h2>
-          </div>
-
-          <div class="contact-box">
-            <div>
-              <p class="contact-label" data-en="Email" data-ko="이메일">Email</p>
-              <a href="mailto:jisyoo@knu.ac.kr">jisyoo@knu.ac.kr</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 2026 Eutheragen Bio</p>
-        <p data-en="All rights reserved." data-ko="All rights reserved.">All rights reserved.</p>
       </div>
-    </footer>
-  </div>
+    </section>
 
-  <script src="script.js?v=4"></script>
+    <section id="about" class="section section-soft">
+      <div class="container">
+        <div class="section-head narrow">
+          <p class="section-tag" data-en="ABOUT" data-ko="회사 소개">ABOUT</p>
+          <h2
+            data-en="Eutheragen Bio is designed as both a discovery company and a translational science company."
+            data-ko="유테라젠 바이오는 발굴 중심 기업이자 전환 과학 기업으로 설계되었습니다.">
+            Eutheragen Bio is designed as both a discovery company and a translational science company.
+          </h2>
+          <p class="section-sub"
+            data-en="Our strategy is to connect deep mechanism to platform value — not by broad claims, but by disciplined biology, differentiated positioning, and scientifically grounded therapeutic design."
+            data-ko="저희 전략은 막연한 가능성이 아니라, 깊이 있는 기전 연구와 차별화된 포지셔닝, 과학적으로 설계된 치료 전략을 통해 플랫폼 가치를 구축하는 데 있습니다.">
+            Our strategy is to connect deep mechanism to platform value — not by broad claims, but by disciplined biology, differentiated positioning, and scientifically grounded therapeutic design.
+          </p>
+        </div>
+
+        <div class="cards three">
+          <article class="card">
+            <h3 data-en="Differentiated entry point" data-ko="차별화된 진입점">Differentiated entry point</h3>
+            <p data-en="A newly discovered immunoreceptor provides a distinct therapeutic entry point into inflammatory disease biology."
+               data-ko="새롭게 발견한 면역수용체는 염증성 질환 생물학에 대한 뚜렷한 치료적 진입점을 제공합니다.">
+              A newly discovered immunoreceptor provides a distinct therapeutic entry point into inflammatory disease biology.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-en="Mechanism-first science" data-ko="기전 중심 과학">Mechanism-first science</h3>
+            <p data-en="Host–virus interaction research provides a rigorous framework for understanding how immune activation and immune escape shape disease."
+               data-ko="숙주–바이러스 상호작용 연구는 면역 활성화와 면역회피가 질환을 어떻게 규정하는지 이해하기 위한 견고한 기반을 제공합니다.">
+              Host–virus interaction research provides a rigorous framework for understanding how immune activation and immune escape shape disease.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-en="Platform scalability" data-ko="플랫폼 확장성">Platform scalability</h3>
+            <p data-en="The company is being built to generate multiple development paths across therapeutic, inflammatory, and infectious disease contexts."
+               data-ko="치료, 염증성 질환, 감염성 질환에 걸쳐 다수의 개발 경로를 만들 수 있는 구조로 회사를 구축하고 있습니다.">
+              The company is being built to generate multiple development paths across therapeutic, inflammatory, and infectious disease contexts.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="science" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag" data-en="CORE SCIENCE" data-ko="핵심 과학">CORE SCIENCE</p>
+          <h2
+            data-en="Two scientific tracks, one integrated company strategy."
+            data-ko="두 개의 과학 축, 하나의 통합된 회사 전략.">
+            Two scientific tracks, one integrated company strategy.
+          </h2>
+        </div>
+
+        <div class="science-columns">
+          <article class="science-column">
+            <div class="column-topline"></div>
+            <p class="column-tag" data-en="TRACK 01" data-ko="트랙 01">TRACK 01</p>
+            <h3 data-en="Immunoreceptor-targeted therapeutic platform"
+                data-ko="면역수용체 표적 치료 플랫폼">
+              Immunoreceptor-targeted therapeutic platform
+            </h3>
+            <p data-en="We are developing a differentiated immunotherapy thesis around a newly discovered immunoreceptor with potential relevance to inflammatory escalation, disease selectivity, and platform expansion."
+               data-ko="새롭게 발견한 면역수용체를 중심으로, 염증 반응의 증폭과 질환 선택성, 플랫폼 확장성과 연결될 수 있는 차별화된 면역치료 전략을 개발하고 있습니다.">
+              We are developing a differentiated immunotherapy thesis around a newly discovered immunoreceptor with potential relevance to inflammatory escalation, disease selectivity, and platform expansion.
+            </p>
+          </article>
+
+          <article class="science-column">
+            <div class="column-topline"></div>
+            <p class="column-tag" data-en="TRACK 02" data-ko="트랙 02">TRACK 02</p>
+            <h3 data-en="Host–virus interaction and immune regulation"
+                data-ko="숙주–바이러스 상호작용과 면역 조절">
+              Host–virus interaction and immune regulation
+            </h3>
+            <p data-en="We investigate how viruses alter innate immunity, inflammatory signaling, antigen presentation, and immune escape — creating a mechanistic foundation that can inform both discovery and translational strategy."
+               data-ko="바이러스가 선천면역, 염증 신호전달, 항원제시, 면역회피를 어떻게 변화시키는지 연구하며, 이를 통해 발굴과 전환 전략을 동시에 뒷받침할 수 있는 기전적 기반을 구축합니다.">
+              We investigate how viruses alter innate immunity, inflammatory signaling, antigen presentation, and immune escape — creating a mechanistic foundation that can inform both discovery and translational strategy.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag" data-en="SELECTED PUBLICATIONS" data-ko="대표 논문">SELECTED PUBLICATIONS</p>
+          <h2
+            data-en="Selected scientific themes represented in our publication portfolio."
+            data-ko="연구 포트폴리오를 대표하는 주요 과학 주제들입니다.">
+            Selected scientific themes represented in our publication portfolio.
+          </h2>
+          <p class="section-sub"
+            data-en="Featured here as representative scientific directions. A full publication archive can be linked or expanded in future updates."
+            data-ko="여기에는 대표적인 연구 방향을 중심으로 구성했습니다. 전체 논문 목록은 이후 별도 아카이브로 확장할 수 있습니다.">
+            Featured here as representative scientific directions. A full publication archive can be linked or expanded in future updates.
+          </p>
+        </div>
+
+        <div class="cards two">
+          <article class="pub-card">
+            <div class="pub-visual gradient-1"></div>
+            <div class="pub-body">
+              <p class="pub-type" data-en="IMMUNITY · HOST RESPONSE" data-ko="면역 · 숙주 반응">IMMUNITY · HOST RESPONSE</p>
+              <h3 data-en="Innate immune signaling and inflammatory control"
+                  data-ko="선천면역 신호전달과 염증 조절">
+                Innate immune signaling and inflammatory control
+              </h3>
+              <p data-en="Representative work spanning antiviral sensing, inflammatory signaling, and immune regulatory mechanisms."
+                 data-ko="항바이러스 감지, 염증 신호전달, 면역 조절 기전을 포괄하는 대표 연구 축입니다.">
+                Representative work spanning antiviral sensing, inflammatory signaling, and immune regulatory mechanisms.
+              </p>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-visual gradient-2"></div>
+            <div class="pub-body">
+              <p class="pub-type" data-en="VIRUS · IMMUNE EVASION" data-ko="바이러스 · 면역회피">VIRUS · IMMUNE EVASION</p>
+              <h3 data-en="Host–virus interaction and viral immune evasion"
+                  data-ko="숙주–바이러스 상호작용과 바이러스 면역회피">
+                Host–virus interaction and viral immune evasion
+              </h3>
+              <p data-en="Mechanistic studies of how viral factors reprogram immunity, host defense, and antigen presentation pathways."
+                 data-ko="바이러스 인자가 면역 반응, 숙주 방어, 항원제시 경로를 어떻게 재구성하는지를 다루는 기전 연구입니다.">
+                Mechanistic studies of how viral factors reprogram immunity, host defense, and antigen presentation pathways.
+              </p>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-visual gradient-3"></div>
+            <div class="pub-body">
+              <p class="pub-type" data-en="TRANSLATIONAL IMMUNOBIOLOGY" data-ko="전환 면역생물학">TRANSLATIONAL IMMUNOBIOLOGY</p>
+              <h3 data-en="Disease-relevant immune mechanisms with therapeutic potential"
+                  data-ko="치료 가능성을 지닌 질환 관련 면역 기전">
+                Disease-relevant immune mechanisms with therapeutic potential
+              </h3>
+              <p data-en="Research programs positioned at the interface of mechanistic science and therapeutic opportunity."
+                 data-ko="기전 연구와 치료 전략의 접점에 위치한 연구 프로그램들입니다.">
+                Research programs positioned at the interface of mechanistic science and therapeutic opportunity.
+              </p>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-visual gradient-4"></div>
+            <div class="pub-body">
+              <p class="pub-type" data-en="INFECTIOUS DISEASE · INFLAMMATION" data-ko="감염성 질환 · 염증">INFECTIOUS DISEASE · INFLAMMATION</p>
+              <h3 data-en="Inflammatory amplification in infectious and immune-mediated disease"
+                  data-ko="감염 및 면역매개 질환에서의 염증 증폭">
+                Inflammatory amplification in infectious and immune-mediated disease
+              </h3>
+              <p data-en="A publication-linked scientific direction that supports the company’s broader therapeutic thesis."
+                 data-ko="회사의 확장된 치료 전략을 뒷받침하는 논문 연계형 과학 방향입니다.">
+                A publication-linked scientific direction that supports the company’s broader therapeutic thesis.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head narrow">
+          <p class="section-tag" data-en="CONTACT" data-ko="문의">CONTACT</p>
+          <h2
+            data-en="We welcome scientific, strategic, and partnership conversations."
+            data-ko="과학적 협력, 전략적 논의, 파트너십 문의를 환영합니다.">
+            We welcome scientific, strategic, and partnership conversations.
+          </h2>
+        </div>
+
+        <div class="contact-box">
+          <div>
+            <p class="contact-label" data-en="Email" data-ko="이메일">Email</p>
+            <a href="mailto:jisyoo@knu.ac.kr">jisyoo@knu.ac.kr</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Eutheragen Bio</p>
+      <p data-en="All rights reserved." data-ko="All rights reserved.">All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=1"></script>
 </body>
 </html>
