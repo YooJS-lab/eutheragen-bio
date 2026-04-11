@@ -1,2 +1,4 @@
 # Eutheragen Bio Website
-Dynamic dual-track corporate landing page for GitHub Pages.
+Minimal update:
+1. Logo removed from header and replaced with wordmark text.
+2. Publication link added.
