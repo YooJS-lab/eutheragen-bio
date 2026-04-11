@@ -1,18 +1,22 @@
-const toggle = document.getElementById('langToggle');
-let currentLang = 'ko';
+const buttons = document.querySelectorAll('.lang-btn');
+let currentLang = 'en';
 
 function applyLanguage(lang){
   document.documentElement.lang = lang;
-  document.querySelectorAll('[data-ko]').forEach(el => {
+  document.querySelectorAll('[data-en]').forEach((el) => {
     const text = el.dataset[lang];
-    if(text) el.textContent = text;
+    if (text) el.textContent = text;
   });
-  toggle.textContent = lang === 'ko' ? 'EN' : 'KO';
+
+  buttons.forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+
   currentLang = lang;
 }
 
-toggle?.addEventListener('click', () => {
-  applyLanguage(currentLang === 'ko' ? 'en' : 'ko');
+buttons.forEach((btn) => {
+  btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
 });
 
-applyLanguage('ko');
+applyLanguage('en');
