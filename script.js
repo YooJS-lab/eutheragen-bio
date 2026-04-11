@@ -1,18 +1,15 @@
 const buttons = document.querySelectorAll('.lang-btn');
-let currentLang = 'en';
 
 function applyLanguage(lang){
   document.documentElement.lang = lang;
   document.querySelectorAll('[data-en]').forEach((el) => {
-    const text = el.dataset[lang];
-    if (text) el.textContent = text;
+    const nextText = el.getAttribute(`data-${lang}`);
+    if (nextText) el.textContent = nextText;
   });
 
   buttons.forEach((btn) => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
-
-  currentLang = lang;
 }
 
 buttons.forEach((btn) => {
