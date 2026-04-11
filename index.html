@@ -5,329 +5,179 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eutheragen Bio | Targeting immune amplification at its source</title>
   <meta name="description" content="Eutheragen Bio is building a first-in-class therapeutic platform based on MCEMP1 biology for severe inflammatory disease." />
-  <meta name="theme-color" content="#0b1d36" />
+  <meta name="theme-color" content="#0b1210" />
   <meta property="og:title" content="Eutheragen Bio" />
-  <meta property="og:description" content="Targeting immune amplification at its source." />
+  <meta property="og:description" content="Targeting immune amplification at its source" />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071c17'/%3E%3Cpath d='M18 46V18h8.5c9.3 0 15.5 5.3 15.5 13.8C42 40.4 35.8 46 26.5 46H18Zm7-6h1.3c5.8 0 8.7-2.7 8.7-8.2 0-5.4-2.9-8-8.7-8H25v16Z' fill='%23c8f7d4'/%3E%3Cpath d='M46 18h-7v28h7V18Z' fill='%232a7f62'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="site-bg" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="grid"></div>
-  </div>
-
-  <header class="topbar">
-    <div class="container nav-shell">
-      <a href="#home" class="brand" aria-label="Eutheragen Bio home">
-        <svg class="brand-mark" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect x="3" y="3" width="74" height="74" rx="22" fill="#102340" stroke="rgba(176,205,255,0.20)"/>
-          <path d="M24 56V24h11.5c12.4 0 20.5 6.2 20.5 16.1S47.9 56 35.5 56H24Zm8-7h3.1c7.8 0 12-3 12-8.9 0-6-4.2-9.1-12-9.1H32v18Z" fill="#D8E6FF"/>
-          <path d="M61 24h-8v32h8V24Z" fill="#3B69B1"/>
-        </svg>
-        <span>
-          <strong>Eutheragen Bio</strong>
-          <small data-i18n="brandTag">First-in-class inflammation therapeutics</small>
-        </span>
+  <div class="site-shell">
+    <header class="topbar">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">E</span>
+        <span class="brand-text">Eutheragen Bio</span>
       </a>
-
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#science" data-i18n="navScience">Science</a>
-        <a href="#platform" data-i18n="navPlatform">Platform</a>
-        <a href="#pipeline" data-i18n="navPipeline">Pipeline</a>
-        <a href="#leadership" data-i18n="navLeadership">Leadership</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
+      <nav class="nav">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#platform" data-i18n="nav.platform">Platform</a>
+        <a href="#pipeline" data-i18n="nav.pipeline">Pipeline</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
-
-      <div class="nav-actions">
-        <button id="langToggle" class="lang-toggle" type="button" aria-label="Toggle language">
-          <span class="lang-pill active" data-lang-label="EN">EN</span>
-          <span class="lang-pill" data-lang-label="KO">KO</span>
-        </button>
-        <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
+      <div class="controls">
+        <button id="langToggle" class="lang-btn" aria-label="Toggle language">KO</button>
       </div>
-    </div>
+    </header>
 
-    <div id="mobileMenu" class="mobile-menu" hidden>
-      <div class="container mobile-menu-inner">
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#science" data-i18n="navScience">Science</a>
-        <a href="#platform" data-i18n="navPlatform">Platform</a>
-        <a href="#pipeline" data-i18n="navPipeline">Pipeline</a>
-        <a href="#leadership" data-i18n="navLeadership">Leadership</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-      </div>
-    </div>
-  </header>
-
-  <main id="home">
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow" data-i18n="heroEyebrow">MCEMP1-driven therapeutic platform</div>
-          <h1 data-i18n="heroTitle">Targeting immune amplification at its source.</h1>
-          <p class="hero-subtitle" data-i18n="heroSubtitle">
-            Eutheragen Bio is building a first-in-class therapeutic platform based on MCEMP1 biology for severe inflammatory disease, infection-associated hyperinflammation, and lung-centered immune pathology.
+    <main>
+      <section id="hero" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">First-in-class inflammatory therapeutics</p>
+          <h1 data-i18n="hero.title">Targeting immune amplification at its source</h1>
+          <p class="hero-sub" data-i18n="hero.subtitle">
+            Eutheragen Bio is building a first-in-class therapeutic platform based on MCEMP1 biology for severe inflammatory disease.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact" data-i18n="heroPrimary">Partner with us</a>
-            <a class="btn btn-secondary" href="#science" data-i18n="heroSecondary">Explore our science</a>
+            <a href="#about" class="btn btn-primary" data-i18n="hero.ctaPrimary">Explore the science</a>
+            <a href="#contact" class="btn btn-secondary" data-i18n="hero.ctaSecondary">Contact us</a>
           </div>
-          <div class="hero-meta">
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="signal-grid">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="visual-card">
+            <p class="card-label" data-i18n="hero.cardLabel">Therapeutic thesis</p>
+            <h3 data-i18n="hero.cardTitle">MCEMP1 as an actionable driver of inflammatory amplification</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stats">
+        <div class="stat-card">
+          <h3 data-i18n="stats.one.title">Upstream biology</h3>
+          <p data-i18n="stats.one.text">Mechanistically differentiated from broad downstream anti-inflammatory suppression.</p>
+        </div>
+        <div class="stat-card">
+          <h3 data-i18n="stats.two.title">Platform potential</h3>
+          <p data-i18n="stats.two.text">A multi-modal approach spanning small molecules, peptides, biologics, and nucleic-acid strategies.</p>
+        </div>
+        <div class="stat-card">
+          <h3 data-i18n="stats.three.title">Translational intent</h3>
+          <p data-i18n="stats.three.text">Built to convert founder-originated immunobiology into therapeutic programs.</p>
+        </div>
+      </section>
+
+      <section id="about" class="section split-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="about.eyebrow">Why Eutheragen</p>
+          <h2 data-i18n="about.title">A new therapeutic axis for destructive inflammation</h2>
+        </div>
+        <div class="split-grid">
+          <article class="panel">
+            <h3 data-i18n="about.left.title">The unmet need</h3>
+            <p data-i18n="about.left.text">
+              Severe inflammatory diseases remain inadequately controlled by current therapies. Broad immunosuppression compromises host defense, while many downstream strategies intervene too late or too narrowly.
+            </p>
+          </article>
+          <article class="panel accent">
+            <h3 data-i18n="about.right.title">Our insight</h3>
+            <p data-i18n="about.right.text">
+              We believe MCEMP1 is not merely a disease-associated marker. It represents an actionable driver of inflammatory amplification and a differentiated entry point for first-in-class therapeutic development.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="platform" class="section">
+        <div class="section-heading narrow">
+          <p class="eyebrow" data-i18n="platform.eyebrow">Platform</p>
+          <h2 data-i18n="platform.title">A multi-modal discovery and therapeutic platform</h2>
+          <p data-i18n="platform.subtitle">Our approach is built to generate multiple therapeutic assets from a single validated inflammatory axis.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3 data-i18n="platform.card1.title">Oligomerization-disruption screening</h3>
+            <p data-i18n="platform.card1.text">Functional tools designed to interrogate MCEMP1 activation architecture and identify tractable intervention points.</p>
+          </article>
+          <article class="feature-card">
+            <h3 data-i18n="platform.card2.title">Reporter-based inflammatory assays</h3>
+            <p data-i18n="platform.card2.text">Mechanistically aligned systems that translate target biology into experimentally actionable discovery workflows.</p>
+          </article>
+          <article class="feature-card">
+            <h3 data-i18n="platform.card3.title">Structure-guided therapeutic design</h3>
+            <p data-i18n="platform.card3.text">A path toward rational discovery across small molecules, peptides, and future biologic modalities.</p>
+          </article>
+          <article class="feature-card">
+            <h3 data-i18n="platform.card4.title">Translational expansion</h3>
+            <p data-i18n="platform.card4.text">Built for indication prioritization, biomarker logic, and a scalable development strategy beyond a single program.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pipeline" class="section">
+        <div class="section-heading narrow">
+          <p class="eyebrow" data-i18n="pipeline.eyebrow">Pipeline vision</p>
+          <h2 data-i18n="pipeline.title">One target, multiple assets, expandable value</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-step">01</span>
             <div>
-              <strong data-i18n="heroMeta1Value">First-in-class</strong>
-              <span data-i18n="heroMeta1Label">therapeutic thesis</span>
+              <h3 data-i18n="pipeline.item1.title">Target validation</h3>
+              <p data-i18n="pipeline.item1.text">Establish MCEMP1 as a mechanistically actionable driver in disease-relevant inflammatory contexts.</p>
             </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-step">02</span>
             <div>
-              <strong data-i18n="heroMeta2Value">Multi-modal</strong>
-              <span data-i18n="heroMeta2Label">platform strategy</span>
+              <h3 data-i18n="pipeline.item2.title">Lead modality discovery</h3>
+              <p data-i18n="pipeline.item2.text">Advance small-molecule, peptide, biologic, and nucleic-acid strategies through a unified discovery engine.</p>
             </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-step">03</span>
             <div>
-              <strong data-i18n="heroMeta3Value">Lung-enriched</strong>
-              <span data-i18n="heroMeta3Label">inflammatory target relevance</span>
+              <h3 data-i18n="pipeline.item3.title">In vivo proof-of-concept</h3>
+              <p data-i18n="pipeline.item3.text">Generate decisive translational evidence and create a clear path toward strategic partnering and Series A readiness.</p>
             </div>
-          </div>
-        </div>
-
-        <div class="hero-panel reveal delay-1">
-          <div class="panel-card panel-glow">
-            <div class="panel-header">
-              <span class="status-dot"></span>
-              <span data-i18n="panelLabel">Platform overview</span>
-            </div>
-            <div class="signal-stack">
-              <div class="signal-card">
-                <h3 data-i18n="panelCard1Title">Biology</h3>
-                <p data-i18n="panelCard1Body">Mechanistically differentiated insight into MCEMP1 as an actionable immune amplification driver.</p>
-              </div>
-              <div class="signal-card">
-                <h3 data-i18n="panelCard2Title">Discovery Engine</h3>
-                <p data-i18n="panelCard2Body">Proprietary assays for oligomerization, functional inflammatory signaling, and translational validation.</p>
-              </div>
-              <div class="signal-card">
-                <h3 data-i18n="panelCard3Title">Therapeutic Output</h3>
-                <p data-i18n="panelCard3Body">Small molecules, peptides, biologics, and nucleic-acid strategies against a single validated axis.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section trust-strip">
-      <div class="container trust-grid reveal">
-        <div class="trust-card">
-          <span data-i18n="trust1Kicker">Clinical need</span>
-          <strong data-i18n="trust1Title">Destructive inflammation remains poorly controlled</strong>
-        </div>
-        <div class="trust-card">
-          <span data-i18n="trust2Kicker">Scientific premise</span>
-          <strong data-i18n="trust2Title">MCEMP1 may represent an upstream immune amplification node</strong>
-        </div>
-        <div class="trust-card">
-          <span data-i18n="trust3Kicker">Company vision</span>
-          <strong data-i18n="trust3Title">Build a category-defining inflammation therapeutics company</strong>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container split-layout">
-        <div class="section-head reveal">
-          <div class="eyebrow" data-i18n="aboutEyebrow">About</div>
-          <h2 data-i18n="aboutTitle">A biotech company built from first-principles immunobiology.</h2>
-        </div>
-        <div class="reveal delay-1">
-          <p class="lead" data-i18n="aboutLead">
-            Eutheragen Bio is advancing a new therapeutic approach to severe inflammatory disease by targeting the proximal molecular circuitry that drives immune escalation rather than merely suppressing downstream consequences.
-          </p>
-          <p data-i18n="aboutBody">
-            Our company is founded on deep mechanistic expertise in immunology, virology, and host-pathogen biology, and is focused on translating differentiated biological insight into strategically valuable therapeutic assets.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="science" class="section section-alt">
-      <div class="container">
-        <div class="section-head reveal centered">
-          <div class="eyebrow" data-i18n="scienceEyebrow">Scientific thesis</div>
-          <h2 data-i18n="scienceTitle">Why MCEMP1 matters</h2>
-          <p data-i18n="scienceSubtitle">We believe MCEMP1 is not merely associated with inflammation. It may act as an upstream driver of inflammatory amplification and a tractable therapeutic intervention node.</p>
-        </div>
-        <div class="card-grid grid-3">
-          <article class="info-card reveal">
-            <div class="card-number">01</div>
-            <h3 data-i18n="scienceCard1Title">Mechanistic differentiation</h3>
-            <p data-i18n="scienceCard1Body">A target position distinct from broad immunosuppression or single-cytokine blockade.</p>
-          </article>
-          <article class="info-card reveal delay-1">
-            <div class="card-number">02</div>
-            <h3 data-i18n="scienceCard2Title">Tissue relevance</h3>
-            <p data-i18n="scienceCard2Body">Strong conceptual relevance to lung-centered inflammatory disease and hyperinflammatory immune pathology.</p>
-          </article>
-          <article class="info-card reveal delay-2">
-            <div class="card-number">03</div>
-            <h3 data-i18n="scienceCard3Title">Actionable architecture</h3>
-            <p data-i18n="scienceCard3Body">A signaling and oligomerization framework that may be directly targetable with multiple modalities.</p>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="platform" class="section">
-      <div class="container">
-        <div class="section-head reveal centered">
-          <div class="eyebrow" data-i18n="platformEyebrow">Platform</div>
-          <h2 data-i18n="platformTitle">A multi-modal discovery engine</h2>
-          <p data-i18n="platformSubtitle">Our advantage is not just the target. It is the integrated discovery system built specifically to drug it.</p>
-        </div>
-
-        <div class="timeline-grid">
-          <div class="timeline-card reveal">
-            <span data-i18n="platformStep1Label">Step 1</span>
-            <h3 data-i18n="platformStep1Title">Target biology</h3>
-            <p data-i18n="platformStep1Body">Founder-originated mechanistic insight into immune amplification biology and disease relevance.</p>
-          </div>
-          <div class="timeline-card reveal delay-1">
-            <span data-i18n="platformStep2Label">Step 2</span>
-            <h3 data-i18n="platformStep2Title">Proprietary assays</h3>
-            <p data-i18n="platformStep2Body">Oligomerization assays, signaling readouts, reporter systems, and disease-relevant validation workflows.</p>
-          </div>
-          <div class="timeline-card reveal delay-2">
-            <span data-i18n="platformStep3Label">Step 3</span>
-            <h3 data-i18n="platformStep3Title">Therapeutic generation</h3>
-            <p data-i18n="platformStep3Body">Small-molecule, peptide, biologic, and nucleic-acid strategies originating from one validated axis.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="pipeline" class="section section-alt">
-      <div class="container">
-        <div class="section-head reveal centered">
-          <div class="eyebrow" data-i18n="pipelineEyebrow">Pipeline strategy</div>
-          <h2 data-i18n="pipelineTitle">One target. Multiple assets. Expandable value.</h2>
-          <p data-i18n="pipelineSubtitle">We are building a platform-driven pipeline that creates optionality in modality, indication, and future partnering strategy.</p>
-        </div>
-
-        <div class="pipeline-table reveal delay-1">
-          <div class="pipeline-row pipeline-head">
-            <div data-i18n="pipeHeadProgram">Program</div>
-            <div data-i18n="pipeHeadApproach">Approach</div>
-            <div data-i18n="pipeHeadStage">Stage</div>
-          </div>
-          <div class="pipeline-row">
-            <div><strong>Program 1</strong></div>
-            <div data-i18n="pipe1Approach">Small-molecule inhibition of oligomerization or signaling</div>
-            <div><span class="badge" data-i18n="pipeStage1">Discovery</span></div>
-          </div>
-          <div class="pipeline-row">
-            <div><strong>Program 2</strong></div>
-            <div data-i18n="pipe2Approach">Peptide-based interface disruption</div>
-            <div><span class="badge" data-i18n="pipeStage2">Concept generation</span></div>
-          </div>
-          <div class="pipeline-row">
-            <div><strong>Program 3</strong></div>
-            <div data-i18n="pipe3Approach">Biologic modulation strategy</div>
-            <div><span class="badge" data-i18n="pipeStage3">Platform expansion</span></div>
-          </div>
-          <div class="pipeline-row">
-            <div><strong>Program 4</strong></div>
-            <div data-i18n="pipe4Approach">Nucleic-acid suppression approach</div>
-            <div><span class="badge" data-i18n="pipeStage4">Exploratory</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split-layout">
-        <div class="section-head reveal">
-          <div class="eyebrow" data-i18n="milestoneEyebrow">Milestones</div>
-          <h2 data-i18n="milestoneTitle">What this stage of financing is designed to unlock</h2>
-        </div>
-        <div class="check-list reveal delay-1">
-          <div class="check-item" data-i18n="milestone1">Expanded target validation</div>
-          <div class="check-item" data-i18n="milestone2">Strengthened proprietary discovery platform</div>
-          <div class="check-item" data-i18n="milestone3">Lead modality prioritization</div>
-          <div class="check-item" data-i18n="milestone4">In vivo proof-of-concept generation</div>
-          <div class="check-item" data-i18n="milestone5">Foundational IP positioning</div>
-          <div class="check-item" data-i18n="milestone6">Preparation for Series A or strategic partnering</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="leadership" class="section section-alt">
-      <div class="container">
-        <div class="section-head reveal centered">
-          <div class="eyebrow" data-i18n="leadershipEyebrow">Leadership</div>
-          <h2 data-i18n="leadershipTitle">World-class biology, built for translation</h2>
-        </div>
-        <div class="leadership-grid">
-          <article class="leader-card reveal">
-            <div class="leader-avatar">YY</div>
-            <h3 data-i18n="leader1Name">Founder & CEO</h3>
-            <p class="leader-role" data-i18n="leader1Role">Immunology, virology, and host-pathogen biology</p>
-            <p data-i18n="leader1Bio">Deep mechanistic expertise in antiviral immunity and inflammatory signaling with a translational vision for first-in-class therapeutic development.</p>
-          </article>
-          <article class="leader-card reveal delay-1">
-            <div class="leader-avatar">AD</div>
-            <h3 data-i18n="leader2Name">Scientific & Strategic Advisors</h3>
-            <p class="leader-role" data-i18n="leader2Role">Drug discovery, translational science, and company building</p>
-            <p data-i18n="leader2Bio">A flexible advisory architecture designed to connect foundational biology with medicinal chemistry, development strategy, and partnering readiness.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section quote-section">
-      <div class="container reveal centered">
-        <blockquote data-i18n="closingQuote">
-          The future of anti-inflammatory therapy will belong to those who control amplification, not just aftermath.
+      <section class="section quote-section">
+        <blockquote>
+          <p data-i18n="quote.text">The future of anti-inflammatory therapy will belong to those who control amplification, not just aftermath.</p>
         </blockquote>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="container contact-grid">
-        <div class="reveal">
-          <div class="eyebrow" data-i18n="contactEyebrow">Contact</div>
-          <h2 data-i18n="contactTitle">Let’s build the next category-defining inflammation therapeutics company.</h2>
-          <p data-i18n="contactBody">For partnership, scientific collaboration, investment, or strategic discussion, please contact Eutheragen Bio.</p>
-        </div>
-        <div class="contact-card reveal delay-1">
-          <div class="contact-item">
-            <span data-i18n="contactEmailLabel">Email</span>
-            <a href="mailto:contact@eutheragenbio.com">contact@eutheragenbio.com</a>
+      <section id="contact" class="section contact-section">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 data-i18n="contact.title">Build with us</h2>
+            <p data-i18n="contact.text">For scientific, strategic, or partnering inquiries, please reach out. Replace the information below with your official company details.</p>
           </div>
-          <div class="contact-item">
-            <span data-i18n="contactLocationLabel">Location</span>
-            <p data-i18n="contactLocationValue">Daegu, Republic of Korea</p>
-          </div>
-          <div class="contact-item">
-            <span data-i18n="contactNoteLabel">Note</span>
-            <p data-i18n="contactNoteValue">This website is an early corporate presence and selected scientific details may be summarized at a high level.</p>
+          <div class="contact-list">
+            <p><strong>Email</strong><br><a href="mailto:contact@eutheragen.com">contact@eutheragen.com</a></p>
+            <p><strong>Location</strong><br><span data-i18n="contact.location">Daegu, Republic of Korea</span></p>
+            <p><strong>GitHub Pages</strong><br><span data-i18n="contact.github">Deploy this site as a static page</span></p>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Eutheragen Bio. <span data-i18n="footerText">All rights reserved.</span></p>
-      <a href="#home" data-i18n="footerBack">Back to top</a>
-    </div>
-  </footer>
+    <footer class="footer">
+      <p>© <span id="year"></span> Eutheragen Bio. <span data-i18n="footer.text">All rights reserved.</span></p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
