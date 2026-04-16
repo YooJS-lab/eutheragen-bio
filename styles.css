@@ -219,13 +219,17 @@ button { font: inherit; }
 }
 
 html[lang="ko"] .hero h1.hero-title-compact {
-  font-size: clamp(3.0rem, 5.7vw, 4.95rem);
-  max-width: 11.8ch;
-  line-height: 0.9;
+  font-size: clamp(2.82rem, 5.1vw, 4.58rem);
+  max-width: 10.9ch;
+  line-height: 0.92;
+  letter-spacing: -0.05em;
 }
 
 html[lang="en"] .hero h1.hero-title-compact {
-  max-width: 13.6ch;
+  font-size: clamp(2.9rem, 5.15vw, 4.72rem);
+  max-width: 12.8ch;
+  line-height: 0.92;
+  letter-spacing: -0.052em;
 }
 .hero h1.hero-title-compact .line {
   display: block;
@@ -586,30 +590,5 @@ section:not(.hero) {
   }
   .hero h1.hero-title-compact .line {
     white-space: normal;
-  }
-}
-
-
-html[lang="ko"] .contact-card h2 {
-  font-size: clamp(1.72rem, 2.35vw, 2.3rem);
-  line-height: 1.14;
-  word-break: keep-all;
-}
-
-html[lang="en"] .contact-card h2 {
-  font-size: clamp(1.75rem, 2.2vw, 2.35rem);
-  line-height: 1.14;
-}
-
-html[lang="ko"] .contact-card p {
-  max-width: 100%;
-  word-break: keep-all;
-}
-
-
-@media (max-width: 1100px) {
-  .contact-card h2 {
-    white-space: normal;
-    font-size: clamp(1.7rem, 4.1vw, 2.3rem);
   }
 }
