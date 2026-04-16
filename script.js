@@ -7,7 +7,7 @@ const translations = {
     navAbout: 'About',
     navContact: 'Contact',
     heroEyebrow: 'SCIENCE-DRIVEN BIOTECH VENTURE',
-    heroTitle: 'Engineering the next generation of anti-inflammatory and antiviral therapeutics.',
+    heroTitle: 'Precision Therapeutics for Inflammation and Emerging Viral Threats.',
     heroLead: 'Eutheragen Bio is building differentiated therapeutic platforms from deep mechanistic biology: first, by suppressing MCEMP1-driven inflammatory amplification in lung and blood; second, by exploiting host–virus interaction intelligence to develop antiviral, anti-inflammatory, and vaccine-enabling solutions against emerging viral threats.',
     heroBtnPrimary: 'Explore Our Platforms',
     heroBtnSecondary: 'Contact',
