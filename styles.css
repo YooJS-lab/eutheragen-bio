@@ -211,13 +211,23 @@ button { font: inherit; }
 }
 
 .hero h1.hero-title-compact {
-  font-size: clamp(2.25rem, 4.3vw, 3.7rem);
-  line-height: 0.92;
+  font-size: clamp(2.5rem, 4.9vw, 4.15rem);
+  line-height: 0.94;
   letter-spacing: -0.06em;
-  max-width: 12.4ch;
+  max-width: 13.8ch;
   text-wrap: balance;
 }
 
+
+html[lang="ko"] .hero h1.hero-title-compact {
+  font-size: clamp(2.6rem, 5.1vw, 4.3rem);
+  max-width: 12.6ch;
+  line-height: 0.95;
+}
+
+html[lang="en"] .hero h1.hero-title-compact {
+  max-width: 14.2ch;
+}
 .hero h1.hero-title-compact .line {
   display: block;
 }
@@ -235,7 +245,7 @@ button { font: inherit; }
 .hero-lead {
   margin: 24px 0 0;
   max-width: 780px;
-  font-size: 1.08rem;
+  font-size: 1.18rem;
   line-height: 1.75;
   color: var(--muted);
 }
@@ -244,7 +254,7 @@ button { font: inherit; }
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 34px;
 }
 .btn {
   display: inline-flex;
@@ -450,7 +460,7 @@ section:not(.hero) {
 }
 .contact-card h2 {
   margin: 0;
-  font-size: clamp(1.45rem, 2.4vw, 1.9rem);
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
   line-height: 1.08;
   letter-spacing: -0.04em;
 }
