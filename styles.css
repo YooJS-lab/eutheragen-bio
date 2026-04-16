@@ -211,21 +211,21 @@ button { font: inherit; }
 }
 
 .hero h1.hero-title-compact {
-  font-size: clamp(3.1rem, 5.8vw, 5.1rem);
-  line-height: 0.9;
-  letter-spacing: -0.07em;
-  max-width: 14.8ch;
+  font-size: clamp(2.9rem, 5.1vw, 4.55rem);
+  line-height: 0.92;
+  letter-spacing: -0.065em;
+  max-width: 14.6ch;
   text-wrap: balance;
 }
 
 html[lang="ko"] .hero h1.hero-title-compact {
-  font-size: clamp(3.2rem, 6vw, 5.25rem);
-  max-width: 11.8ch;
-  line-height: 0.9;
+  font-size: clamp(3rem, 5.25vw, 4.7rem);
+  max-width: 12.6ch;
+  line-height: 0.92;
 }
 
 html[lang="en"] .hero h1.hero-title-compact {
-  max-width: 13.6ch;
+  max-width: 14.2ch;
 }
 .hero h1.hero-title-compact .line {
   display: block;
