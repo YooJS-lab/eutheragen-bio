@@ -181,16 +181,15 @@ button { font: inherit; }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(460px, 0.9fr);
-  gap: 40px;
+  grid-template-columns: minmax(0, 1.04fr) minmax(420px, 0.96fr);
+  gap: 34px;
   align-items: start;
   min-height: calc(100vh - 120px);
-  padding: 80px 0 40px;
+  padding: 74px 0 40px;
 }
 
-
 .hero-copy {
-  padding-top: 12px;
+  padding-top: 8px;
 }
 
 
@@ -212,10 +211,11 @@ button { font: inherit; }
 }
 
 .hero h1.hero-title-compact {
-  font-size: clamp(2.25rem, 4.55vw, 3.95rem);
-  line-height: 0.96;
-  letter-spacing: -0.058em;
-  max-width: 8.8ch;
+  font-size: clamp(2.25rem, 4.3vw, 3.7rem);
+  line-height: 0.94;
+  letter-spacing: -0.06em;
+  max-width: 10.8ch;
+  text-wrap: balance;
 }
 
 .hero h1.hero-title-compact .line {
@@ -223,7 +223,7 @@ button { font: inherit; }
 }
 
 .hero h1.hero-title-compact .line + .line {
-  margin-top: 0.06em;
+  margin-top: 0.08em;
 }
 
 
@@ -267,13 +267,13 @@ button { font: inherit; }
   display: grid;
   grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 16px;
-  margin-top: 32px;
+  margin-top: 34px;
   width: 100%;
-  max-width: 730px;
+  max-width: 100%;
 }
 
 .metric-card {
-  min-height: 116px;
+  min-height: 128px;
   padding: 18px 18px 16px;
   border-radius: 18px;
   background: rgba(255,255,255,0.03);
@@ -284,6 +284,11 @@ button { font: inherit; }
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 8px;
+}
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .metric-label {
   display: block;
@@ -301,12 +306,13 @@ button { font: inherit; }
 }
 
 .hero-panel {
-  width: min(100%, 560px);
+  width: min(100%, 100%);
+  max-width: 560px;
   min-height: auto;
-  padding: 28px 28px 26px;
-  justify-self: end;
+  padding: 28px 28px 24px;
+  justify-self: stretch;
   align-self: start;
-  margin-top: 58px;
+  margin-top: 10px;
 }
 
 .panel-topline {
@@ -527,5 +533,16 @@ section:not(.hero) {
   .site-footer {
     flex-direction: column;
     width: min(calc(100% - 20px), var(--max-width));
+  }
+}
+
+@media (min-width: 1081px) {
+  .hero-copy { min-width: 0; }
+}
+
+@media (max-width: 1280px) and (min-width: 1081px) {
+  .hero h1.hero-title-compact {
+    font-size: clamp(2.1rem, 4vw, 3.35rem);
+    max-width: 11.5ch;
   }
 }
