@@ -460,9 +460,14 @@ section:not(.hero) {
 }
 .contact-card h2 {
   margin: 0;
-  font-size: clamp(2.1rem, 3.3vw, 2.9rem);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
+  max-width: none;
+  font-size: clamp(1.72rem, 2.05vw, 2.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+html[lang='ko'] .contact-card h2 {
+  font-size: clamp(1.68rem, 1.85vw, 2.0rem);
+  letter-spacing: -0.025em;
 }
 .contact-card p {
   max-width: 760px;
@@ -575,7 +580,11 @@ section:not(.hero) {
 }
 
 @media (min-width: 1081px) {
-  .contact-card h2 { white-space: nowrap; }
+  .contact-card h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
 }
 
 @media (max-width: 1080px) {
