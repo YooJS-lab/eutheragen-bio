@@ -458,22 +458,9 @@ section:not(.hero) {
 .contact-section {
   padding-bottom: 80px;
 }
-.contact-card {
-  padding: 30px;
-  text-align: left;
-}
-.contact-card h2 {
-  margin: 0;
-  font-size: clamp(2.1rem, 3.3vw, 2.9rem);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
-}
-.contact-card p {
-  max-width: 760px;
-  margin: 18px 0 0;
-  color: var(--muted);
-  line-height: 1.7;
-}
+
+
+
 .contact-link {
   display: inline-block;
   margin-top: 20px;
@@ -579,7 +566,7 @@ section:not(.hero) {
 }
 
 @media (min-width: 1081px) {
-  .contact-card h2 { white-space: nowrap; }
+  
 }
 
 @media (max-width: 1080px) {
@@ -590,5 +577,51 @@ section:not(.hero) {
   }
   .hero h1.hero-title-compact .line {
     white-space: normal;
+  }
+}
+
+
+/* Final contact-section sizing fix */
+.contact-card {
+  padding: 30px;
+  text-align: left;
+}
+
+.contact-card h2 {
+  margin: 0;
+  max-width: 100%;
+  letter-spacing: -0.03em;
+}
+
+.contact-card p {
+  max-width: 100%;
+  margin: 18px 0 0;
+  color: var(--muted);
+  line-height: 1.74;
+  word-break: keep-all;
+}
+
+html[lang="en"] .contact-card h2 {
+  font-size: clamp(1.38rem, 1.62vw, 1.82rem);
+  line-height: 1.14;
+  white-space: nowrap;
+}
+
+html[lang="ko"] .contact-card h2 {
+  font-size: clamp(1.58rem, 1.82vw, 2.0rem);
+  line-height: 1.16;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+html[lang="ko"] .contact-card p {
+  font-size: 0.97rem;
+}
+
+@media (max-width: 1100px) {
+  html[lang="en"] .contact-card h2,
+  html[lang="ko"] .contact-card h2 {
+    white-space: normal;
+    font-size: clamp(1.55rem, 3.9vw, 2.15rem);
   }
 }
