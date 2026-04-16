@@ -204,6 +204,10 @@ button { font: inherit; }
   letter-spacing: -0.04em;
   max-width: none;
 }
+
+.hero-title-break {
+  display: block;
+}
 .hero-lead {
   margin: 24px 0 0;
   max-width: 780px;

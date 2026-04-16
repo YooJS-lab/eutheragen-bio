@@ -7,7 +7,7 @@ const translations = {
     navAbout: 'About',
     navContact: 'Contact',
     heroEyebrow: 'SCIENCE-DRIVEN BIOTECH VENTURE',
-    heroTitle: 'Precision Therapeutics for Inflammation and Emerging Viral Threats.',
+    heroTitle: 'Precision Therapeutics for Inflammation<br class="hero-title-break">and Emerging Viral Threats.',
     heroLead: 'Eutheragen Bio is building differentiated therapeutic platforms from deep mechanistic biology: first, by suppressing MCEMP1-driven inflammatory amplification in lung and blood; second, by exploiting host–virus interaction intelligence to develop antiviral, anti-inflammatory, and vaccine-enabling solutions against emerging viral threats.',
     heroBtnPrimary: 'Explore Our Platforms',
     heroBtnSecondary: 'Contact',
@@ -145,6 +145,12 @@ const setLanguage = (lang) => {
     const key = el.dataset.i18n;
     if (translations[lang] && translations[lang][key]) {
       el.textContent = translations[lang][key];
+    }
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+    const key = el.dataset.i18nHtml;
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
     }
   });
   document.querySelectorAll('.lang-btn').forEach((btn) => {
