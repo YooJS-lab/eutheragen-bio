@@ -1,13 +1,13 @@
 const translations = {
   en: {
-    brandTagline: 'Eu- · Therapeutics · Generation',
+    brandTagline: 'Eu(Yoo) · Therapeutics · Generation',
     navScience: 'Science',
     navPlatforms: 'Platforms',
     navValue: 'Value Proposition',
     navAbout: 'About',
     navContact: 'Contact',
     heroEyebrow: 'SCIENCE-DRIVEN BIOTECH VENTURE',
-    heroTitle: 'Precision Therapeutics for Inflammation<br class="hero-title-break">and Emerging Viral Threats.',
+    heroTitle: 'Engineering the next generation of anti-inflammatory and antiviral therapeutics.',
     heroLead: 'Eutheragen Bio is building differentiated therapeutic platforms from deep mechanistic biology: first, by suppressing MCEMP1-driven inflammatory amplification in lung and blood; second, by exploiting host–virus interaction intelligence to develop antiviral, anti-inflammatory, and vaccine-enabling solutions against emerging viral threats.',
     heroBtnPrimary: 'Explore Our Platforms',
     heroBtnSecondary: 'Contact',
@@ -59,8 +59,8 @@ const translations = {
     aboutEyebrow: 'COMPANY IDENTITY',
     aboutTitle: 'A name that reflects both origin and ambition.',
     aboutCard1Title: 'Eutheragen Bio',
-    aboutCard1Body1: 'The name Eutheragen combines Eu- (“good,” “well”), Therapeutics, and Generation—expressing our commitment to creating the next generation of better therapeutics from original science.',
-    aboutCard1Body2: 'It signals scientific originality, translational discipline, and the ambition to build enduring company value from breakthrough immunology, virology, and mechanism-driven therapeutic design.',
+    aboutCard1Body1: '“Eutheragen” integrates Eu (유, Yoo), Therapeutics, and Generation—capturing the idea of generating a new class of therapeutics from original science.',
+    aboutCard1Body2: 'Our identity signals scientific originality, translational intent, and the ambition to build durable value from breakthrough immunology and virology.',
     aboutCard2Title: 'Company Character',
     aboutCard2Body: 'Professional, science-dense, globally credible, and venture-facing—designed to speak to investors, partners, and future collaborators with equal clarity.',
     contactEyebrow: 'CONTACT',
@@ -69,7 +69,7 @@ const translations = {
     footerText: 'Science-originated. Venture-positioned. Future-facing.'
   },
   ko: {
-    brandTagline: 'Eu- · Therapeutics · Generation',
+    brandTagline: 'Eu(유, Yoo) · Therapeutics · Generation',
     navScience: '핵심 과학',
     navPlatforms: '플랫폼',
     navValue: '투자 포인트',
@@ -128,8 +128,8 @@ const translations = {
     aboutEyebrow: 'COMPANY IDENTITY',
     aboutTitle: '기원과 비전을 동시에 담는 이름, Eutheragen Bio.',
     aboutCard1Title: 'Eutheragen Bio',
-    aboutCard1Body1: '“Eutheragen”은 Eu- (좋은, 더 나은), Therapeutics, Generation을 결합한 이름으로, 독창적 과학으로부터 더 나은 차세대 치료를 만들어내겠다는 뜻을 담고 있습니다.',
-    aboutCard1Body2: '이 이름은 과학적 독창성, 정교한 번역연구 지향성, 그리고 면역학·바이러스학·기전 기반 치료설계를 바탕으로 지속가능한 기업가치를 창출하겠다는 의지를 상징합니다.',
+    aboutCard1Body1: '“Eutheragen”은 Eu(유, Yoo), Therapeutics, Generation의 결합어로, 독창적 과학에서 새로운 치료 세대를 만들어낸다는 뜻을 담고 있습니다.',
+    aboutCard1Body2: '이 이름은 과학적 독창성, 강한 번역연구 지향성, 그리고 면역학·바이러스학 기반의 장기적 기업가치 창출 의지를 상징합니다.',
     aboutCard2Title: '회사의 인상',
     aboutCard2Body: '전문적이고, 과학 밀도가 높으며, 글로벌하게 신뢰 가능하고, 동시에 투자자와 파트너에게 명확히 어필하는 바이오벤처의 인상을 지향합니다.',
     contactEyebrow: 'CONTACT',
@@ -145,12 +145,6 @@ const setLanguage = (lang) => {
     const key = el.dataset.i18n;
     if (translations[lang] && translations[lang][key]) {
       el.textContent = translations[lang][key];
-    }
-  });
-  document.querySelectorAll('[data-i18n-html]').forEach((el) => {
-    const key = el.dataset.i18nHtml;
-    if (translations[lang] && translations[lang][key]) {
-      el.innerHTML = translations[lang][key];
     }
   });
   document.querySelectorAll('.lang-btn').forEach((btn) => {
