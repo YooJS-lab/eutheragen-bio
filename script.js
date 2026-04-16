@@ -7,7 +7,7 @@ const translations = {
     navAbout: 'About',
     navContact: 'Contact',
     heroEyebrow: 'SCIENCE-DRIVEN BIOTECH VENTURE',
-    heroTitle: 'Engineering the next generation of anti-inflammatory and antiviral therapeutics.',
+    heroTitle: 'Precision Therapeutics for Inflammation<br>and Emerging Viral Threats.',
     heroLead: 'Eutheragen Bio is building differentiated therapeutic platforms from deep mechanistic biology: first, by suppressing MCEMP1-driven inflammatory amplification in lung and blood; second, by exploiting host–virus interaction intelligence to develop antiviral, anti-inflammatory, and vaccine-enabling solutions against emerging viral threats.',
     heroBtnPrimary: 'Explore Our Platforms',
     heroBtnSecondary: 'Contact',
@@ -76,7 +76,7 @@ const translations = {
     navAbout: '회사 소개',
     navContact: '연락처',
     heroEyebrow: 'SCIENCE-DRIVEN BIOTECH VENTURE',
-    heroTitle: '차세대 항염증·항바이러스 치료제를 설계하는 바이오벤처, Eutheragen Bio.',
+    heroTitle: '염증 제어와 신변종 바이러스 위협 대응을 위한<br>정밀 치료제 개발.',
     heroLead: 'Eutheragen Bio는 깊이 있는 기전 연구를 사업화 가치로 전환하는 바이오벤처입니다. 첫째, 폐 및 혈액 염증을 증폭시키는 MCEMP1 축의 활성과 유전자 발현을 억제하여 차별화된 항염증 치료제를 개발합니다. 둘째, 바이러스–숙주 상호작용 연구 역량과 숙주면역 회피·저해 탐색 시스템을 활용해 신변종 바이러스 대응용 항바이러스·항염증 치료제 및 백신 후보 개발 플랫폼을 구축합니다.',
     heroBtnPrimary: '플랫폼 보기',
     heroBtnSecondary: '문의하기',
@@ -144,7 +144,11 @@ const setLanguage = (lang) => {
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     const key = el.dataset.i18n;
     if (translations[lang] && translations[lang][key]) {
-      el.textContent = translations[lang][key];
+      if (key === 'heroTitle') {
+        el.innerHTML = translations[lang][key];
+      } else {
+        el.textContent = translations[lang][key];
+      }
     }
   });
   document.querySelectorAll('.lang-btn').forEach((btn) => {

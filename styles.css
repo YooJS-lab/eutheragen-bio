@@ -204,6 +204,13 @@ button { font: inherit; }
   letter-spacing: -0.055em;
   max-width: 10.5ch;
 }
+
+.hero h1.hero-title-compact {
+  font-size: clamp(2.4rem, 5.1vw, 4.2rem);
+  line-height: 1.02;
+  max-width: 12.5ch;
+}
+
 .hero-lead {
   margin: 24px 0 0;
   max-width: 780px;
