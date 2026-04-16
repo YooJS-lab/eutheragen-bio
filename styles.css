@@ -181,11 +181,11 @@ button { font: inherit; }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.14fr) minmax(430px, 0.86fr);
-  gap: 34px;
+  grid-template-columns: minmax(0, 1.22fr) minmax(420px, 0.78fr);
+  gap: 30px;
   align-items: start;
-  min-height: calc(100vh - 120px);
-  padding: 74px 0 40px;
+  min-height: auto;
+  padding: 56px 0 16px;
 }
 
 .hero-copy {
@@ -211,29 +211,29 @@ button { font: inherit; }
 }
 
 .hero h1.hero-title-compact {
-  font-size: clamp(2.5rem, 4.9vw, 4.15rem);
-  line-height: 0.94;
-  letter-spacing: -0.06em;
-  max-width: 13.8ch;
+  font-size: clamp(3.1rem, 5.8vw, 5.1rem);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  max-width: 14.8ch;
   text-wrap: balance;
 }
 
-
 html[lang="ko"] .hero h1.hero-title-compact {
-  font-size: clamp(2.6rem, 5.1vw, 4.3rem);
-  max-width: 12.6ch;
-  line-height: 0.95;
+  font-size: clamp(3.2rem, 6vw, 5.25rem);
+  max-width: 11.8ch;
+  line-height: 0.9;
 }
 
 html[lang="en"] .hero h1.hero-title-compact {
-  max-width: 14.2ch;
+  max-width: 13.6ch;
 }
 .hero h1.hero-title-compact .line {
   display: block;
+  white-space: nowrap;
 }
 
 .hero h1.hero-title-compact .line + .line {
-  margin-top: 0.1em;
+  margin-top: 0.04em;
 }
 
 .hero-copy {
@@ -243,10 +243,10 @@ html[lang="en"] .hero h1.hero-title-compact {
 
 
 .hero-lead {
-  margin: 24px 0 0;
-  max-width: 780px;
-  font-size: 1.18rem;
-  line-height: 1.75;
+  margin: 28px 0 0;
+  max-width: 760px;
+  font-size: 1.24rem;
+  line-height: 1.78;
   color: var(--muted);
 }
 
@@ -254,7 +254,7 @@ html[lang="en"] .hero h1.hero-title-compact {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-top: 34px;
+  margin-top: 28px;
 }
 .btn {
   display: inline-flex;
@@ -460,7 +460,7 @@ section:not(.hero) {
 }
 .contact-card h2 {
   margin: 0;
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-size: clamp(2.1rem, 3.3vw, 2.9rem);
   line-height: 1.08;
   letter-spacing: -0.04em;
 }
@@ -571,5 +571,20 @@ section:not(.hero) {
   .hero h1.hero-title-compact {
     font-size: clamp(2.1rem, 4vw, 3.35rem);
     max-width: 11.5ch;
+  }
+}
+
+@media (min-width: 1081px) {
+  .contact-card h2 { white-space: nowrap; }
+}
+
+@media (max-width: 1080px) {
+  .hero {
+    min-height: auto;
+    padding-top: 44px;
+    padding-bottom: 12px;
+  }
+  .hero h1.hero-title-compact .line {
+    white-space: normal;
   }
 }
