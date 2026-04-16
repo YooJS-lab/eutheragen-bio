@@ -76,7 +76,7 @@ const translations = {
     navAbout: '회사 소개',
     navContact: '연락처',
     heroEyebrow: 'SCIENCE-DRIVEN BIOTECH VENTURE',
-    heroTitle: '<span class="line">염증 제어 및</span><span class="line">신변종 바이러스 대응</span><span class="line">정밀 치료제 개발</span>',
+    heroTitle: '<span class="line">염증 제어 및 신변종 바이러스 대응</span><span class="line">차세대 정밀 치료제 개발</span>',
     heroLead: 'Eutheragen Bio는 깊이 있는 기전 연구를 사업화 가치로 전환하는 바이오벤처입니다. 첫째, 폐 및 혈액 염증을 증폭시키는 MCEMP1 축의 활성과 유전자 발현을 억제하여 차별화된 항염증 치료제를 개발합니다. 둘째, 바이러스–숙주 상호작용 연구 역량과 숙주면역 회피·저해 탐색 시스템을 활용해 신변종 바이러스 대응용 항바이러스·항염증 치료제 및 백신 후보 개발 플랫폼을 구축합니다.',
     heroBtnPrimary: '플랫폼 보기',
     heroBtnSecondary: '문의하기',
