@@ -219,10 +219,10 @@ button { font: inherit; }
 }
 
 html[lang="ko"] .hero h1.hero-title-compact {
-  font-size: clamp(2.82rem, 5.1vw, 4.58rem);
-  max-width: 10.9ch;
+  font-size: clamp(2.74rem, 4.95vw, 4.45rem);
+  max-width: 10.75ch;
   line-height: 0.92;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.048em;
 }
 
 html[lang="en"] .hero h1.hero-title-compact {
