@@ -181,11 +181,15 @@ button { font: inherit; }
 
 .hero {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 32px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
+  gap: 34px;
+  align-items: start;
   min-height: calc(100vh - 120px);
-  padding: 80px 0 48px;
+  padding: 80px 0 40px;
+}
+
+.hero-copy {
+  padding-top: 10px;
 }
 
 .eyebrow {
@@ -251,10 +255,12 @@ button { font: inherit; }
   display: grid;
   grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 16px;
-  margin-top: 34px;
+  margin-top: 30px;
+  width: 100%;
 }
 .metric-card {
-  padding: 18px;
+  min-height: 108px;
+  padding: 18px 18px 16px;
   border-radius: 18px;
   background: rgba(255,255,255,0.03);
   border: 1px solid var(--line);
@@ -281,30 +287,35 @@ button { font: inherit; }
 }
 
 .hero-panel {
-  padding: 26px;
+  width: 100%;
+  min-height: 100%;
+  padding: 30px 28px;
+  justify-self: stretch;
+  align-self: stretch;
+  margin-top: 62px;
 }
 .panel-topline {
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   letter-spacing: 0.18em;
   color: var(--cyan);
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 .signal-box {
-  padding: 18px 0;
+  padding: 20px 0;
   border-top: 1px solid rgba(135, 210, 230, 0.10);
 }
 .signal-box:first-of-type { border-top: 0; }
 .signal-title {
-  font-size: 1rem;
+  font-size: 1.02rem;
   font-weight: 700;
   margin-bottom: 8px;
 }
 .signal-box p {
   margin: 0;
   color: var(--muted);
-  line-height: 1.65;
-  font-size: 0.98rem;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 section:not(.hero) {
@@ -474,6 +485,7 @@ section:not(.hero) {
     grid-template-columns: 1fr;
   }
   .hero { min-height: auto; padding-top: 50px; }
+  .hero-panel { margin-top: 8px; }
 }
 
 @media (max-width: 740px) {
