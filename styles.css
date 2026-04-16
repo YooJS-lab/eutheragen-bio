@@ -181,16 +181,18 @@ button { font: inherit; }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
-  gap: 34px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(460px, 0.9fr);
+  gap: 40px;
   align-items: start;
   min-height: calc(100vh - 120px);
   padding: 80px 0 40px;
 }
 
+
 .hero-copy {
-  padding-top: 10px;
+  padding-top: 12px;
 }
+
 
 .eyebrow {
   display: inline-block;
@@ -210,10 +212,20 @@ button { font: inherit; }
 }
 
 .hero h1.hero-title-compact {
-  font-size: clamp(2.4rem, 5.1vw, 4.2rem);
-  line-height: 1.02;
-  max-width: 12.5ch;
+  font-size: clamp(2.25rem, 4.55vw, 3.95rem);
+  line-height: 0.96;
+  letter-spacing: -0.058em;
+  max-width: 8.8ch;
 }
+
+.hero h1.hero-title-compact .line {
+  display: block;
+}
+
+.hero h1.hero-title-compact .line + .line {
+  margin-top: 0.06em;
+}
+
 
 .hero-lead {
   margin: 24px 0 0;
@@ -255,11 +267,13 @@ button { font: inherit; }
   display: grid;
   grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 16px;
-  margin-top: 30px;
+  margin-top: 32px;
   width: 100%;
+  max-width: 730px;
 }
+
 .metric-card {
-  min-height: 108px;
+  min-height: 116px;
   padding: 18px 18px 16px;
   border-radius: 18px;
   background: rgba(255,255,255,0.03);
@@ -287,24 +301,27 @@ button { font: inherit; }
 }
 
 .hero-panel {
-  width: 100%;
-  min-height: 100%;
-  padding: 30px 28px;
-  justify-self: stretch;
-  align-self: stretch;
-  margin-top: 62px;
+  width: min(100%, 560px);
+  min-height: auto;
+  padding: 28px 28px 26px;
+  justify-self: end;
+  align-self: start;
+  margin-top: 58px;
 }
+
 .panel-topline {
   font-size: 0.86rem;
   letter-spacing: 0.18em;
   color: var(--cyan);
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
+
 .signal-box {
-  padding: 20px 0;
+  padding: 18px 0;
   border-top: 1px solid rgba(135, 210, 230, 0.10);
 }
+
 .signal-box:first-of-type { border-top: 0; }
 .signal-title {
   font-size: 1.02rem;
@@ -314,9 +331,10 @@ button { font: inherit; }
 .signal-box p {
   margin: 0;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.62;
   font-size: 1rem;
 }
+
 
 section:not(.hero) {
   padding: 48px 0;
@@ -502,7 +520,8 @@ section:not(.hero) {
   .top-nav { gap: 14px; }
   .top-nav a { font-size: 0.88rem; }
   .hero-metrics { grid-template-columns: 1fr; }
-  .hero h1 { max-width: 100%; }
+  .hero h1,
+  .hero h1.hero-title-compact { max-width: 100%; }
   .btn { width: 100%; }
   .hero-actions { flex-direction: column; }
   .site-footer {
