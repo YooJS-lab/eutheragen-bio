@@ -254,7 +254,7 @@ button { font: inherit; }
 }
 .metric-value {
   display: block;
-  font-size: 1.12rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -309,9 +309,9 @@ section:not(.hero) {
 }
 .section-heading h2 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.08;
-  letter-spacing: -0.045em;
+  font-size: clamp(1.48rem, 2.1vw, 2.1rem);
+  line-height: 1.14;
+  letter-spacing: -0.035em;
 }
 .section-heading p {
   color: var(--muted);
@@ -441,6 +441,12 @@ section:not(.hero) {
 @keyframes spinReverse {
   from { transform: rotate(360deg); }
   to { transform: rotate(0deg); }
+}
+
+@media (min-width: 1081px) {
+  .section-heading h2 {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 1080px) {

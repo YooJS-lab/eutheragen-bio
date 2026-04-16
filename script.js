@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    brandTagline: 'Eu(Yoo) · Therapeutics · Generation',
+    brandTagline: 'Eu- · Therapeutics · Generation',
     navScience: 'Science',
     navPlatforms: 'Platforms',
     navValue: 'Value Proposition',
@@ -59,7 +59,7 @@ const translations = {
     aboutEyebrow: 'COMPANY IDENTITY',
     aboutTitle: 'A name that reflects both origin and ambition.',
     aboutCard1Title: 'Eutheragen Bio',
-    aboutCard1Body1: '“Eutheragen” integrates Eu (유, Yoo), Therapeutics, and Generation—capturing the idea of generating a new class of therapeutics from original science.',
+    aboutCard1Body1: 'The name Eutheragen combines Eu- (“good,” “well”), Therapeutics, and Generation—expressing our commitment to creating the next generation of better therapeutics from original science.',
     aboutCard1Body2: 'Our identity signals scientific originality, translational intent, and the ambition to build durable value from breakthrough immunology and virology.',
     aboutCard2Title: 'Company Character',
     aboutCard2Body: 'Professional, science-dense, globally credible, and venture-facing—designed to speak to investors, partners, and future collaborators with equal clarity.',
@@ -69,7 +69,7 @@ const translations = {
     footerText: 'Science-originated. Venture-positioned. Future-facing.'
   },
   ko: {
-    brandTagline: 'Eu(유, Yoo) · Therapeutics · Generation',
+    brandTagline: 'Eu- · Therapeutics · Generation',
     navScience: '핵심 과학',
     navPlatforms: '플랫폼',
     navValue: '투자 포인트',
@@ -128,7 +128,7 @@ const translations = {
     aboutEyebrow: 'COMPANY IDENTITY',
     aboutTitle: '기원과 비전을 동시에 담는 이름, Eutheragen Bio.',
     aboutCard1Title: 'Eutheragen Bio',
-    aboutCard1Body1: '“Eutheragen”은 Eu(유, Yoo), Therapeutics, Generation의 결합어로, 독창적 과학에서 새로운 치료 세대를 만들어낸다는 뜻을 담고 있습니다.',
+    aboutCard1Body1: 'Eutheragen이라는 이름은 Eu-(“good,” “well”), Therapeutics, Generation의 결합으로, 독창적 과학을 바탕으로 더 나은 차세대 치료제를 만들어내겠다는 의지를 담고 있습니다.',
     aboutCard1Body2: '이 이름은 과학적 독창성, 강한 번역연구 지향성, 그리고 면역학·바이러스학 기반의 장기적 기업가치 창출 의지를 상징합니다.',
     aboutCard2Title: '회사의 인상',
     aboutCard2Body: '전문적이고, 과학 밀도가 높으며, 글로벌하게 신뢰 가능하고, 동시에 투자자와 파트너에게 명확히 어필하는 바이오벤처의 인상을 지향합니다.',
